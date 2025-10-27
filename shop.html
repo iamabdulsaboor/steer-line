@@ -1,23 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shop - Steer Line</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <!-- <link rel="stylesheet" href="assets/css/about.css"> -->
-    <link rel="stylesheet" href="assets/css/shop.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shop - Steer Line</title>
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/shop.css" />
+
+  <!-- ✅ AOS Animation Library -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
 </head>
+
 <body>
-     <header>
-    <div class="logo">
+  <header data-aos="fade-down">
+    <div class="logo" data-aos="fade-right">
       <a href="control-custom.html">
-      <img src="assets/img/Steerline_Adil-UK_SuperX_CJ___Tommy_on_a_Date-removebg-preview.png"
-        alt="Control Customs Logo">
-        </a>
+        <img src="assets/img/Steerline_Adil-UK_SuperX_CJ___Tommy_on_a_Date-removebg-preview.png"
+          alt="Control Customs Logo" />
+      </a>
     </div>
 
-    <nav>
+    <nav data-aos="fade-down">
       <ul>
         <li><a href="index.html" class="active">Home</a></li>
         <li><a href="about.html">About us</a></li>
@@ -28,196 +32,154 @@
       </ul>
     </nav>
 
-    <a href="#" class="cta">Get A Quote</a>
+    <a href="#" class="cta" data-aos="zoom-in">Get A Quote</a>
 
-    <div class="hamburger">
+    <div class="hamburger" data-aos="fade-left">
       <span></span>
       <span></span>
       <span></span>
     </div>
   </header>
 
-         <!--====== End Header =======-->
+  <!-- ✅ Hero Section -->
+  <section class="hero" data-aos="fade-up">
+    <div class="overlay"></div>
+    <div class="hero-text">
+      <h2 style="color: #fff;">Shop</h2>
+    </div>
+  </section>
 
-         <!-- ✅ Hero Section under navbar -->
-<section class="hero">
-  <div class="overlay"></div>
-  <div class="hero-text">
-    <!-- <h1>Partners</h1> -->
-    <h2 style="color: #fff;">Shop</h2>
+  <!-- ✅ Our Services -->
+  <div class="container" data-aos="fade-up">
+    <h2 class="section-title">Our Services</h2>
+
+    <div class="image-card-grid">
+      <div class="image-card" data-aos="zoom-in" data-aos-delay="100">
+        <div class="image-wrapper">
+          <img src="assets/img/IMG_5481-1-1024x1024.webp" alt="Service One" />
+        </div>
+        <div class="card-content">
+          <h3>Custom Steering Wheels</h3>
+        </div>
+      </div>
+
+      <div class="image-card" data-aos="zoom-in" data-aos-delay="200">
+        <div class="image-wrapper">
+          <img src="assets/img/image0-12-scaled.jpg" alt="Service Two" />
+        </div>
+        <div class="card-content">
+          <h3>Airbag Covers</h3>
+        </div>
+      </div>
+
+      <div class="image-card" data-aos="zoom-in" data-aos-delay="300">
+        <div class="image-wrapper">
+          <img src="assets/img/IMG_4688-scaled.jpg" alt="Service Three" />
+        </div>
+        <div class="card-content">
+          <h3>Paddle Shifters</h3>
+        </div>
+      </div>
+    </div>
   </div>
-</section>
 
-         <!--========== Image Card ==========-->
-          <div class="container">
-        <h2 class="section-title">Our Services</h2>
-
-        <div class="image-card-grid">
-            <div class="image-card">
-                <div class="image-wrapper">
-                    <img src="assets/img/IMG_5481-1-1024x1024.webp" alt="Service One">
-                </div>
-                <div class="card-content">
-                    <h3>Custom Steering Wheels</h3>
-                </div>
-            </div>
-
-            <div class="image-card">
-                <div class="image-wrapper">
-                    <img src="assets/img/image0-12-scaled.jpg" alt="Service Two">
-                </div>
-                <div class="card-content">
-                    <h3>Airbag Covers</h3>
-                </div>
-            </div>
-
-            <div class="image-card">
-                <div class="image-wrapper">
-                    <img src="assets/img/IMG_4688-scaled.jpg" alt="Service Three">
-                </div>
-                <div class="card-content">
-                    <h3>Paddle Shifters</h3>
-                </div>
-            </div>
-
+  <!-- ✅ Contact Section -->
+  <div class="contact-section" data-aos="fade-up">
+    <div class="contact-info" data-aos="fade-right">
+      <!-- <p class="label">CONTACT</p> -->
+      <h1>We are happy to help</h1>
+      <p>
+        If you haven't found what you're looking for and you need advice on a project or you have additional questions –
+        feel free to contact us.
+      </p>
+      <div class="contact-details">
+        <div class="contact-item" data-aos="fade-up" data-aos-delay="100">
+          <h3>Phone:</h3>
+          <p>+(44) 07932 884905</p>
         </div>
-    </div>
-     <!--============ contact ==========-->
-
-      <div class="contact-section">
-        <div class="contact-info">
-            <p class="label">CONTACT</p>
-            <h1>We are happy to help</h1>
-            <p>If you haven't found what you're looking for and you need advice on a project or you have additional questions – feel free to contact us.</p>
-            <div class="contact-details">
-                <div class="contact-item">
-                    <h3>Phone:</h3>
-                    <p>+(44) 07932 884905</p>
-                </div>
-                <div class="contact-item">
-                    <h3>Email:</h3>
-                    <p>controlcustomsuk@gmail.com</p>
-                </div>
-            </div>
+        <div class="contact-item" data-aos="fade-up" data-aos-delay="200">
+          <h3>Email:</h3>
+          <p>controlcustomsuk@gmail.com</p>
         </div>
-
-        <div class="contact-form">
-            <form action="#" method="POST">
-                <div class="form-row">
-                    <div class="form-group">
-                        <input type="text" id="fullName" name="fullName" placeholder="Full name" required>
-                        <label for="fullName">Full name</label>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" id="email" name="email" placeholder="Email" required>
-                        <label for="email">Email</label>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <input type="text" id="country" name="country" placeholder="Country" required>
-                    <label for="country">Country</label>
-                </div>
-                <div class="form-group">
-                    <textarea id="message" name="message" rows="4" placeholder="Message" required></textarea>
-                    <label for="message">Message</label>
-                </div>
-
-                <div class="checkbox-group">
-                    <input type="checkbox" id="privacyConsent" name="privacyConsent" required>
-                    <label for="privacyConsent">I have read and accept the <a href="#">Privacy Policy</a></label>
-                </div>
-
-        
-
-
-                <button type="submit">Send</button>
-            </form>
-        </div>
+      </div>
     </div>
 
-         <!--=========== Departments ============-->
- 
-        
-    <div class="container">
-       
-        <h2 class="aft-1" style="text-align: center;">Departments</h2>
-      <h2 style="color: black; text-align: center; font-weight: bold; font-size: 32px;">Where we are</h2>
+    <div class="contact-form" data-aos="fade-left">
+      <form action="#" method="POST">
+        <div class="form-row">
+          <div class="form-group" data-aos="fade-up" data-aos-delay="100">
+            <input type="text" id="fullName" name="fullName" placeholder="Full name" required />
+            <label for="fullName">Full name</label>
+          </div>
+          <div class="form-group" data-aos="fade-up" data-aos-delay="200">
+            <input type="email" id="email" name="email" placeholder="Email" required />
+            <label for="email">Email</label>
+          </div>
+        </div>
+        <div class="form-group" data-aos="fade-up" data-aos-delay="300">
+          <input type="text" id="country" name="country" placeholder="Country" required />
+          <label for="country">Country</label>
+        </div>
+        <div class="form-group" data-aos="fade-up" data-aos-delay="400">
+          <textarea id="message" name="message" rows="4" placeholder="Message" required></textarea>
+          <label for="message">Message</label>
+        </div>
 
-        <section class="locations-grid">
-            <div class="location-card">
-                <h2>United Kingdom</h2>
-                <div class="contact-item">
-                    <span class="icon location"></span>
-                    <p>Headquarters</p>
-                </div>
-                <div class="contact-item">
-                    <span class="icon phone"></span>
-                    <p>+(44) 07932 884905</p>
-                </div>
-                <div class="contact-item">
-                    <span class="icon email"></span>
-                    <p>controlcustomsuk@gmail.com</p>
-                </div>
-                <div class="contact-item">
-                    <span class="icon location"></span>
-                    <p>Unit 20 Wentworth Rd, Heathfield Industrial Estate, Newton Abbot TQ12 6TL, UNITED KINGDOM</p>
-                </div>
-                <p class="company-number">Company Number: 11340030</p>
-            </div>
+        <div class="checkbox-group" data-aos="fade-up" data-aos-delay="500">
+          <input type="checkbox" id="privacyConsent" name="privacyConsent" required />
+          <label for="privacyConsent">I have read and accept the <a href="#">Privacy Policy</a></label>
+        </div>
 
-            <div class="location-card">
-                <h2>Canada</h2>
-                <div class="contact-item">
-                    <span class="icon location"></span>
-                    <p>Headquarters Canada</p>
-                </div>
-                <div class="contact-item">
-                    <span class="icon phone"></span>
-                    <p>+(48) 508 419 740</p>
-                </div>
-                <div class="contact-item">
-                    <span class="icon email"></span>
-                    <p>kontakt@controlcustoms.ca</p>
-                </div>
-                <div class="contact-item">
-                    <span class="icon location"></span>
-                    <p>ul. Wolności 150/18 58-500 Jelenia Góra, Polska</p>
-                </div>
-            </div>
-
-            <div class="location-card">
-                <h2>Australia</h2>
-                <div class="contact-item">
-                    <span class="icon location"></span>
-                    <p>Customer Service</p>
-                </div>
-                <div class="contact-item">
-                    <span class="icon phone"></span>
-                    <p>+(61) 421 555 441</p>
-                </div>
-                <div class="contact-item">
-                    <span class="icon email"></span>
-                    <p>enquire@controlcustoms.com.au</p>
-                </div>
-                <div class="contact-item">
-                    <span class="icon location"></span>
-                    <p>25 Regalia Close Norwest NWS 2153, AUSTRALIA</p>
-                </div>
-            </div>
-        </section>
+        <button type="submit" data-aos="zoom-in">Send</button>
+      </form>
     </div>
+  </div>
 
+  <!-- ✅ Departments -->
+  <div class="container" data-aos="fade-up">
+    <h2 class="aft-1" style="text-align: center;">Departments</h2>
+    <h2 style="color: black; text-align: center; font-weight: bold; font-size: 32px;">Where we are</h2>
 
-        <!--============== Footer ===============-->
-         <footer class="footer">
-    <div class="footer-links">
+    <section class="locations-grid">
+      <div class="location-card" data-aos="fade-up" data-aos-delay="100">
+        <h2>United Kingdom</h2>
+        <div class="contact-item"><p>Headquarters</p></div>
+        <div class="contact-item"><p>+(44) 07932 884905</p></div>
+        <div class="contact-item"><p>controlcustomsuk@gmail.com</p></div>
+        <div class="contact-item">
+          <p>Unit 20 Wentworth Rd, Heathfield Industrial Estate, Newton Abbot TQ12 6TL, UNITED KINGDOM</p>
+        </div>
+        <p class="company-number">Company Number: 11340030</p>
+      </div>
+
+      <div class="location-card" data-aos="fade-up" data-aos-delay="200">
+        <h2>Canada</h2>
+        <div class="contact-item"><p>Headquarters Canada</p></div>
+        <div class="contact-item"><p>+(48) 508 419 740</p></div>
+        <div class="contact-item"><p>kontakt@controlcustoms.ca</p></div>
+        <div class="contact-item"><p>ul. Wolności 150/18 58-500 Jelenia Góra, Polska</p></div>
+      </div>
+
+      <div class="location-card" data-aos="fade-up" data-aos-delay="300">
+        <h2>Australia</h2>
+        <div class="contact-item"><p>Customer Service</p></div>
+        <div class="contact-item"><p>+(61) 421 555 441</p></div>
+        <div class="contact-item"><p>enquire@controlcustoms.com.au</p></div>
+        <div class="contact-item"><p>25 Regalia Close Norwest NWS 2153, AUSTRALIA</p></div>
+      </div>
+    </section>
+  </div>
+
+  <!-- ✅ Footer -->
+  <footer class="footer" data-aos="fade-up">
+    <div class="footer-links" data-aos="fade-up" data-aos-delay="100">
       <a href="#">Shipping Policy</a>
       <a href="#">Warranty & Refund Policy</a>
       <a href="#">Privacy Policy</a>
       <a href="#">Terms of Service</a>
     </div>
 
-    <div class="footer-socials">
+    <div class="footer-socials" data-aos="fade-up" data-aos-delay="200">
       <a href="#"><i class="uil uil-facebook-f"></i></a>
       <a href="#"><i class="uil uil-instagram"></i></a>
       <a href="#"><i class="uil uil-pinterest"></i></a>
@@ -228,25 +190,32 @@
     <div class="footer-divider"></div>
 
     <div class="footer-payments">
-      <img src="assets/img/img-6.avif" alt="PayPal">
-      <!-- <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Visa.svg" alt="Visa">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Mastercard-logo.png" alt="MasterCard">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Apple Pay">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" alt="Google Pay"> -->
+      <img src="assets/img/img-6.avif" alt="PayPal" />
     </div>
 
     <p class="footer-copy">© 2025 STEER LINE</p>
   </footer>
 
-  <!--======== whatsapp icon =========-->
-  <!-- WhatsApp Floating Button -->
-  <a href="https://wa.me/923435676966" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+  <!-- ✅ WhatsApp Floating Button -->
+  <a href="https://wa.me/923435676966" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp" data-aos="zoom-in">
     <i class="uil uil-whatsapp"></i>
   </a>
 
-  <!-- Unicons (for icons) -->
+  <!-- Unicons -->
   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+
+  <!-- JS -->
   <script src="slider.js"></script>
   <script src="assets/js/script.js"></script>
+
+  <!-- ✅ AOS Script -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true,
+      offset: 120,
+    });
+  </script>
 </body>
 </html>

@@ -5,30 +5,31 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home - Steer Line</title>
+
+  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+
+  <!-- AOS (Animate On Scroll) Library -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- Your Custom CSS -->
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
   <!--======== NavBar Section =========-->
-
-  <!-- <div class="hero">
-  <video autoplay muted loop playsinline> -->
-  <!-- 🔹 Replace this with your own video -->
-  <!-- <source src="videoplayback.mp4" type="video/mp4">
-  </video>
-  <div class="overlay"></div> -->
-
   <header>
-    <div class="logo">
+    <div class="logo" data-aos="fade-right">
       <a href="index.html">
-      <img src="assets/img/Steerline_Adil-UK_SuperX_CJ___Tommy_on_a_Date-removebg-preview.png"
-        alt="Control Customs Logo">
-        </a>
+        <img src="assets/img/Steerline_Adil-UK_SuperX_CJ___Tommy_on_a_Date-removebg-preview.png"
+          alt="Control Customs Logo">
+      </a>
     </div>
 
-    <nav>
+    <nav data-aos="fade-down">
       <ul>
         <li><a href="index.html" class="active">Home</a></li>
         <li><a href="about.html">About us</a></li>
@@ -39,7 +40,7 @@
       </ul>
     </nav>
 
-    <a href="#" class="cta">Get A Quote</a>
+    <a href="#" class="cta" data-aos="fade-left">Get A Quote</a>
 
     <div class="hamburger">
       <span></span>
@@ -48,60 +49,39 @@
     </div>
   </header>
 
-  <!-- <div class="hero-content">
-    <h1>STEER LINE</h1>
-    <h2>Custom Steering Wheels</h2>
-    <p>Professional Steering Wheel Modifications</p>
-
-    <div class="stats">
-      <div><strong>32K+</strong> Satisfied customers</div>
-      <div><strong>33+</strong> Brands supported</div>
-    </div>
-
-    <a href="#" class="btn">See More ↓</a>
-  </div>
-</div> -->
-
-
   <!--============= Slider Section =========-->
-
-  <section class="hero-slider">
+  <section class="hero-slider" data-aos="fade-up">
     <div class="slide active" style="background-image: url('assets/img/img-5.jpg');">
       <div class="overlay"></div>
-      <div class="content">
+      <div class="content" data-aos="zoom-in">
         <h1>THE HIGHEST<br>QUALITY<br>STANDARDS.</h1>
       </div>
     </div>
 
     <div class="slide" style="background-image: url('assets/img/img-5.jpg');">
       <div class="overlay"></div>
-      <div class="content">
+      <div class="content" data-aos="zoom-in">
         <h1>INNOVATION<br>IN EVERY<br>DETAIL.</h1>
       </div>
     </div>
 
     <div class="slide" style="background-image: url('assets/img/img-5.jpg');">
       <div class="overlay"></div>
-      <div class="content">
+      <div class="content" data-aos="zoom-in">
         <h1>ENGINEERED<br>FOR<br>PERFORMANCE.</h1>
       </div>
     </div>
 
-    <!-- Arrows -->
     <div class="navigation">
       <div class="prev">&#10094;</div>
       <div class="next">&#10095;</div>
     </div>
   </section>
 
-
-
   <!--=========== image section ============-->
-
-  <section class="control-section">
+  <section class="control-section" data-aos="fade-up">
     <div class="control-content">
-      <!-- Text Section -->
-      <div class="text-side">
+      <div class="text-side" data-aos="fade-right">
         <h2>Take control</h2>
         <p>
           Control Customs UK specialize in high-quality steering wheel re-trims and carbon fiber upgrades,
@@ -109,13 +89,10 @@
         </p>
       </div>
 
-      <!-- Image Section -->
-      <div class="image-side">
+      <div class="image-side" data-aos="fade-left">
         <div class="light-overlay"></div>
         <div class="wheel-container">
           <img src="assets/img/img-1.png" alt="Steering Wheel" class="wheel-img" />
-
-          <!-- Dots (Hotspots) -->
           <div class="dot" style="top: 9%; left: 52%;" data-text="Carbon fiber finish"></div>
           <div class="dot" style="top: 46%; left: 70%;" data-text="Premium grip"></div>
           <div class="dot" style="top: 50%; left: 18%;" data-text="Performance buttons"></div>
@@ -126,126 +103,111 @@
     </div>
   </section>
 
-
   <!--=========== images cards ===============-->
-
-  <section class="steering-wheel-offer">
+  <section class="steering-wheel-offer" data-aos="fade-up">
     <div class="container">
-        <p class="aft-1">OFFER</p>
-        <h2 class="aft-2">Design your own steering wheel</h2>
-        <p class="hashtag">#drivewithcontrol</p>
-        <p class="description">
-            Take a look at our offer dedicated specifically to people with passion.
-        </p>
-        <p class="sub-description">Design your own steering wheel.</p>
+      <p class="aft-1">OFFER</p>
+      <h2 class="aft-2">Design your own steering wheel</h2>
+      <p class="hashtag">#drivewithcontrol</p>
+      <p class="description">
+        Take a look at our offer dedicated specifically to people with passion.
+      </p>
+      <p class="sub-description">Design your own steering wheel.</p>
 
-        <div class="offer-cards">
-            <div class="card">
-                <img src="assets/img/img-10.jpg" alt="Carbon fiber steering wheel">
-                <div class="card-content">
-                    <h2>Carbon fiber</h2>
-                    <a href="#" class="btn">Design Your Steering Wheel</a>
-                </div>
-            </div>
-            <div class="card">
-                <img src="assets/img/img-10.jpg" alt="Steering wheel re-trims">
-                <div class="card-content">
-                    <h2>Steering wheel re-trims</h2>
-                    <a href="#" class="btn">Design Your Steering Wheel</a>
-                </div>
-            </div>
-            <div class="card">
-                <img src="assets/img/img-10.jpg" alt="Airbag covers">
-                <div class="card-content">
-                    <h2>Airbag covers</h2>
-                    <a href="#" class="btn">Design Your Airbag Cover</a>
-                </div>
-            </div>
+      <div class="offer-cards">
+        <div class="card" data-aos="zoom-in" data-aos-delay="100">
+          <img src="assets/img/img-10.jpg" alt="Carbon fiber steering wheel">
+          <div class="card-content">
+            <h2>Carbon fiber</h2>
+            <a href="#" class="btn">Design Your Steering Wheel</a>
+          </div>
         </div>
+
+        <div class="card" data-aos="zoom-in" data-aos-delay="200">
+          <img src="assets/img/img-10.jpg" alt="Steering wheel re-trims">
+          <div class="card-content">
+            <h2>Steering wheel re-trims</h2>
+            <a href="#" class="btn">Design Your Steering Wheel</a>
+          </div>
+        </div>
+
+        <div class="card" data-aos="zoom-in" data-aos-delay="300">
+          <img src="assets/img/img-10.jpg" alt="Airbag covers">
+          <div class="card-content">
+            <h2>Airbag covers</h2>
+            <a href="#" class="btn">Design Your Airbag Cover</a>
+          </div>
+        </div>
+      </div>
     </div>
-</section>
-     <!--========== How do we operate ==========-->
-     <section>
- <div style="text-align: center;">
+  </section>
+
+  <!--========== How do we operate ==========-->
+  <section data-aos="fade-up">
+    <div style="text-align: center;">
       <h2 class="aft-1">How do we operate</h2>
       <h2 class="aft-2">The new steering wheel - three possibilities</h2>
       <p>We tailor specifically to your needs. You choose how you want your steering wheel to look.</p>
     </div>
-     <div class="options-container">
-    <div class="option-card">
+
+    <div class="options-container">
+      <div class="option-card" data-aos="fade-right">
         <h2>First option</h2>
         <ul>
-            <li>Send us your original Steering Wheel® - This will then be modified to your exact specifications.</li>
-            <li>Upon completion photographs will be sent to ensure you are satisfied before making payment.</li>
-            <li>Once payment has been received your Modified ControlCustomsUK Steering Wheel will be sent to you. (+Please note this means you will be without a steering wheel for the duration of production)</li>
+          <li>Send us your original Steering Wheel® - modified to your exact specifications.</li>
+          <li>Photos sent for approval before payment.</li>
+          <li>After payment, your modified Steering Wheel will be sent to you.</li>
         </ul>
-    </div>
-    <div class="option-card">
+      </div>
+
+      <div class="option-card" data-aos="fade-up">
         <h2>Second option</h2>
         <ul>
-            <li>Pay a holding deposit – A new OEM Wheel will be purchased and modified to your exact specifications.</li>
-            <li>Upon completion photographs will be sent to ensure you are satisfied before making payment.</li>
-            <li>Once payment has been received your New ControlCustomsUK Wheel will be sent to you.</li>
-            <li>Upon installation of your new Wheel, send us your original (as well as provide tracking details) and your deposit will be released back to you once received.</li>
+          <li>Pay a holding deposit – new OEM Wheel modified to your specs.</li>
+          <li>Photos sent for approval before payment.</li>
+          <li>After installation, send your original wheel to release your deposit.</li>
         </ul>
-    </div>
-    <div class="option-card">
+      </div>
+
+      <div class="option-card" data-aos="fade-left">
         <h2>Third option</h2>
         <ul>
-            <li>Keep your original Steering Wheel – Payment up front for a new OEM Wheel, which is then modified to your exact specifications.</li>
-            <li>Upon completion photographs will be sent to ensure you are satisfied before making payment.</li>
-            <li>Once payment has been received your New ControlCustomsUK Steering Wheel will be sent to you.</li>
+          <li>Keep your original Steering Wheel – pay upfront for a new OEM Wheel.</li>
+          <li>Photos sent for approval before payment.</li>
+          <li>Once approved, your new Steering Wheel is shipped.</li>
         </ul>
-    </div>
-</div>
-</section>
-  <!--================ Before / After ==============-->
-
-  <section style="background-color: #fff;">
-    <div style="text-align: center;">
-      <h2 class="aft-1">Projects</h2>
-      <h2 class="aft-2">See Our Realisations</h2>
-      <p>We guarantee the highest quality of the materials we use and a high standard of service.</p>
-    </div>
-    <div class="comparison-wrapper" style="padding: 29px 4%;">
-
-      <!-- Card 1 -->
-      <div class="comparison-container" data-id="1">
-        <img src="assets/img/DSC04395-scaled.jpg" alt="Before" class="comparison-before">
-        <img src="assets/img/IMG_4667-1-768x768.jpg" alt="After" class="comparison-after">
-        <div class="slider-line"></div>
-        <div class="slider-icon"></div>
-        <div class="label before">Before</div>
-        <div class="label after">After</div>
       </div>
-
-      <!-- Card 2 -->
-      <div class="comparison-container" data-id="2">
-        <img src="assets/img/DSC04395-scaled.jpg" alt="Before" class="comparison-before">
-        <img src="assets/img/IMG_4667-1-768x768.jpg" alt="After" class="comparison-after">
-        <div class="slider-line"></div>
-        <div class="slider-icon"></div>
-        <div class="label before">Before</div>
-        <div class="label after">After</div>
-      </div>
-
-      <!-- Card 3 -->
-      <div class="comparison-container" data-id="3">
-        <img src="assets/img/DSC04395-scaled.jpg" alt="Before" class="comparison-before">
-        <img src="assets/img/IMG_4667-1-768x768.jpg" alt="After" class="comparison-after">
-        <div class="slider-line"></div>
-        <div class="slider-icon"></div>
-        <div class="label before">Before</div>
-        <div class="label after">After</div>
-      </div>
-
     </div>
   </section>
 
+  <!--================ Before / After ==============-->
+  <section style="background-color: #fff;" data-aos="fade-up">
+    <div style="text-align: center;">
+      <h2 class="aft-1">Projects</h2>
+      <h2 class="aft-2">See Our Realisations</h2>
+      <p>We guarantee the highest quality of materials and craftsmanship.</p>
+    </div>
 
-  <!--======== footer ==========-->
+    <div class="comparison-wrapper" style="padding: 29px 4%;">
+      <div class="comparison-container" data-aos="zoom-in" data-aos-delay="100">
+        <img src="assets/img/DSC04395-scaled.jpg" alt="Before" class="comparison-before">
+        <img src="assets/img/IMG_4667-1-768x768.jpg" alt="After" class="comparison-after">
+      </div>
 
-  <footer class="footer">
+      <div class="comparison-container" data-aos="zoom-in" data-aos-delay="200">
+        <img src="assets/img/DSC04395-scaled.jpg" alt="Before" class="comparison-before">
+        <img src="assets/img/IMG_4667-1-768x768.jpg" alt="After" class="comparison-after">
+      </div>
+
+      <div class="comparison-container" data-aos="zoom-in" data-aos-delay="300">
+        <img src="assets/img/DSC04395-scaled.jpg" alt="Before" class="comparison-before">
+        <img src="assets/img/IMG_4667-1-768x768.jpg" alt="After" class="comparison-after">
+      </div>
+    </div>
+  </section>
+
+  <!--======== Footer =========-->
+  <footer class="footer" data-aos="fade-up">
     <div class="footer-links">
       <a href="#">Shipping Policy</a>
       <a href="#">Warranty & Refund Policy</a>
@@ -265,29 +227,30 @@
 
     <div class="footer-payments">
       <img src="assets/img/img-6.avif" alt="PayPal">
-      <!-- <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Visa.svg" alt="Visa">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Mastercard-logo.png" alt="MasterCard">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Apple Pay">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" alt="Google Pay"> -->
     </div>
 
     <p class="footer-copy">© 2025 STEER LINE</p>
   </footer>
 
-  <!--======== whatsapp icon =========-->
-  <!-- WhatsApp Floating Button -->
+  <!--======== WhatsApp Floating Icon =========-->
   <a href="https://wa.me/923435676966" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
     <i class="uil uil-whatsapp"></i>
   </a>
 
-  <!-- Unicons (for icons) -->
-  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
-
-
-
+  <!-- JS Files -->
   <script src="slider.js"></script>
   <script src="assets/js/script.js"></script>
 
-</body>
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000, // animation duration
+      offset: 100,    // start animation 100px before element is visible
+      easing: 'ease-in-out',
+      once: true,     // animate only once
+    });
+  </script>
 
+</body>
 </html>
