@@ -805,3 +805,105 @@
         font-size: 0.85em;
     }
 }
+
+/* how do we operate */
+
+.options-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows cards to wrap to the next line on smaller screens */
+    justify-content: center;
+    gap: 30px; /* Space between cards */
+     /* Limit overall width */
+    padding: 20px;
+}
+
+.option-card {
+    background-color: transparent; /* Slightly lighter dark background for cards */
+    /* border: 1px solid #3B82F6; */
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1); /* Softer, darker shadow */
+    flex: 1; /* Allow cards to grow and shrink */
+    min-width: 300px; /* Minimum width for cards before wrapping */
+    max-width: 380px; /* Maximum width for cards */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align content to the top */
+}
+
+.option-card h2 {
+    color: #3B82F6; /* Gold color for titles */
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.option-card ul {
+    list-style: none; /* Remove default bullet points */
+    padding: 0;
+    margin: 0;
+}
+
+.option-card li {
+    margin-bottom: 15px;
+    font-size: 1.1em;
+    line-height: 1.6;
+    position: relative;
+    padding-left: 25px; /* Space for custom bullet */
+}
+
+.option-card li:last-child {
+    margin-bottom: 0;
+}
+
+/* Custom bullet point using pseudo-elements */
+.option-card li::before {
+    content: "•"; /* Gold dot as bullet */
+    color: #3B82F6;
+    position: absolute;
+    left: 0;
+    font-size: 1.2em;
+    top: 0; /* Align with the top of the text */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .options-container {
+        flex-direction: column; /* Stack cards vertically on smaller screens */
+        align-items: center; /* Center stacked cards */
+        gap: 20px;
+    }
+
+    .option-card {
+        max-width: 90%; /* Make cards take more width on small screens */
+        min-width: unset; /* Remove min-width to allow more flexibility */
+    }
+
+    .option-card h2 {
+        font-size: 1.8em;
+    }
+
+    .option-card li {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .options-container {
+        padding: 10px;
+    }
+
+    .option-card {
+        padding: 20px;
+    }
+
+    .option-card h2 {
+        font-size: 1.6em;
+    }
+
+    .option-card li {
+        font-size: 0.95em;
+        padding-left: 20px;
+    }
+}

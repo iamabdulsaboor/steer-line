@@ -1,0 +1,173 @@
+/* ===== Hero Section ===== */
+.hero {
+  position: relative;
+  height: 400px;
+  background: url('../img/img-15.avif') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px; /* space for fixed navbar */
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.3); /* dark overlay */
+}
+
+.hero-text {
+  position: relative;
+  color: white;
+  text-align: center;
+  z-index: 2;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.hero-text h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #3B82F6;
+  border-bottom: 2px solid #3B82F6;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+
+.container {
+     /* Wider container for more columns */
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.brand-logos-section {
+    padding: 60px 0; /* Vertical padding for the section */
+    background: #fff;
+    overflow: hidden; /* Clear floats if any */
+}
+
+/* Optional: Section Title */
+.brand-logos-section h2 {
+    text-align: center;
+    color: #000; /* Gold color for title */
+    font-size: 2.5em;
+    margin-bottom: 50px;
+    font-weight: bold;
+}
+
+.logo-grid {
+    display: grid;
+    /* Default for larger screens: 4 columns */
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px 20px; /* Vertical gap, Horizontal gap */
+    justify-items: center; /* Center items within their grid cells */
+    align-items: start; /* Align content to the top within grid cells */
+}
+
+.brand-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center logo and text horizontally */
+    text-decoration: none;
+    color: #000;
+    font-size: 1.1em;
+    font-weight: 500;
+    transition: transform 0.3s ease, color 0.3s ease;
+    text-align: center; /* Ensure text is centered below logo */
+    min-width: 120px; /* Minimum width to prevent items from becoming too squished */
+}
+
+.brand-item:hover {
+    color: #3B82F6; /* Gold on hover */
+    transform: translateY(-5px); /* Subtle lift effect */
+}
+
+.brand-item img {
+    width: 100px; /* Fixed width for logos */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 100%; /* Ensure it doesn't overflow container on smaller screens */
+    object-fit: contain; /* Scale image down to fit the content box without cropping */
+    margin-bottom: 10px;
+    filter: url(); /* Makes colored logos white (assuming they are colored, if already white, remove this) */
+    transition: filter 0.3s ease;
+}
+
+.brand-item:hover img {
+    filter: brightness(1) invert(0); /* On hover, show original color or brighter white */
+}
+
+.brand-item p {
+    margin: 0;
+    padding: 0;
+    white-space: nowrap; /* Prevent brand name from wrapping */
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Space between name and arrow */
+}
+
+.brand-item p span {
+    color: #3B82F6; /* Gold for the arrow */
+    font-weight: bold;
+}
+.content-columns{
+    display: flex;
+    gap: 34px;
+}
+
+
+/* --- Responsive Adjustments --- */
+
+/* Medium screens (e.g., tablets, small desktops) */
+@media (max-width: 1200px) {
+    .logo-grid {
+        grid-template-columns: repeat(3, 1fr); /* 3 columns */
+        gap: 30px 15px;
+    }
+}
+
+/* Smaller screens (e.g., larger phones in landscape) */
+@media (max-width: 768px) {
+    .logo-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns */
+        gap: 25px 10px;
+    }
+    .brand-item img {
+        width: 80px; /* Slightly smaller logos */
+    }
+    .brand-item p {
+        font-size: 1em;
+    }
+    .brand-logos-section {
+        padding: 40px 0;
+    }
+    .content-columns{
+    display: block;
+    /* gap: 34px; */
+}
+}
+
+/* Smallest screens (e.g., phones in portrait) */
+@media (max-width: 480px) {
+    .logo-grid {
+        grid-template-columns: 1fr; /* Single column, stacked vertically */
+        gap: 20px;
+    }
+    .brand-item {
+        flex-direction: row; /* Stack logo and text horizontally */
+        justify-content: center;
+        width: 100%; /* Take full width */
+    }
+    .brand-item img {
+        width: 60px; /* Even smaller logos */
+        margin-right: 15px; /* Space between logo and text */
+        margin-bottom: 0; /* Remove bottom margin when horizontal */
+    }
+    .brand-item p {
+        font-size: 1em;
+        white-space: normal; /* Allow text to wrap if it's too long, less likely here */
+    }
+}
